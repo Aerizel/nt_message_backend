@@ -1,7 +1,6 @@
 export interface userDbModel {
-    USERNAME: string;
-    NAME: string;
-    SURNAME: string;
-    PASSWORD: string;
-    ROLE: string | null;
+    username: string;
+    name: string;
+    surname: string;
+    role: string;
 }

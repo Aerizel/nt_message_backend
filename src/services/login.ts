@@ -11,9 +11,10 @@ export function Login(username: string, password: string): Promise<string> {
         if (userData.length > 0) {
             const token = jwt.sign(
                 {
-                    username: userData[0].USERNAME,
-                    name: userData[0].NAME,
-                    surname: userData[0].SURNAME
+                    username: userData[0].username,
+                    name: userData[0].name,
+                    surname: userData[0].surname,
+                    role: userData[0].role
                 },
                 JWT_SECRET_KEY,
                 { expiresIn: JWT_EXPIRES_TIME }
